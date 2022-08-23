@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destinations WishList</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+	<!-- Our CSS -->
+    <link rel="stylesheet" href="wish_list.css">
+    <script src="wish_list.js" defer></script> 
+</head>
+
+<body>
+     <header>
+        <h1>Vacation Destination Wish list</h1>
+        <p>Found exciting places to visit on your next vacation ? Use the form below 
+            to add them to your wish list.</p>
+     </header>
+     <main>
+        <form id ="destination_detail_form">
+        <label for="name" >Destination name</label>
+        <input type="text" id="name" placeholder="provide a name of the destination" required>
+
+        <label for="loaction">Destination location</label>
+        <input type="text" placeholder="where is the destination located?" id="location">
+
+        <label for="photo">photo</label>
+        <input type="url" placeholder="provide an url of the photo" id="photo">
+
+        <label for="describtion">Destination description</label>
+        <textarea  id="describtion" placeholder="describe the destination"></textarea>
+        
+        <button id="addphoto" type="submit"> add a new place here</button>
+    </form>
+        <article>
+            <h2 id="title">Enter destination detals</h2>
+                <div id="destination_container">
+                </div>
+            
+        </article>
+    </main>
+</body>
+
+</html>
